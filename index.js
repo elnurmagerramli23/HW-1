@@ -6,27 +6,39 @@ function even(a,b) {
     } else {
         return a + b
     }
-}
-document.write("1. Even numbers " + even(10,2) + "</br>");
+}console.log("Even numbers " + even(10,2));
 
 //2 coordinate plane
 function coordinatePlane(x,y) {
     if ( x > 0 && y > 0){
         console.log("Точка с координатами Х и У принадлежат 1-ой четверти" )
-    }else if ( x < 0 && y > 0){
+    }else if ( x < 0 && y > 0) {
         console.log("Точка с координатами Х и У принадлежат 2-ой четверти" )
-    }else if ( x < 0 && y < 0){
+    }else if ( x < 0 && y < 0) {
         console.log("Точка с координатами Х и У принадлежат 3-ой четверти" )
-    }else if ( x > 0 && y < 0){
+    }else if ( x > 0 && y < 0) {
         console.log("Точка с координатами Х и У принадлежат 4-ой четверти" )
+    }else if ( x === 0 && y === 0) {
+        console.log("Точка с координатамми Х и У находится в центре координат");
+        
     }
-}console.log(coordinatePlane(10,-5));
-//3 sum numbers
-function sumNumbers(num1, num2, num3) {
-    if( num1 > 0 && num2 > 0 && num3 > 0){
+}console.log(coordinatePlane(0,0));
 
-    }
+//3 sum numbers
+    function sumOfNumbers(num1, num2, num3) {
+        let summar = 0;
+        if ( num1 > 0 ) {
+            if ( num2 > 0) {
+                if ( num3 > 0 ) {
+                summar += num1 + num2 + num3
+                }
+            }
+            
+        }
+        return summar;
 }
+console.log("Сумма положительных чисел",sumOfNumbers(2,6,7));
+
 
 
 
@@ -46,8 +58,7 @@ console.log("B")
 }else if ( a >= 90 && a <= 100){
 console.log("A")
 }
-}
-console.log(assessment(23))
+}console.log(assessment(23))
 
 
 
@@ -62,22 +73,22 @@ if (i % 2 == 0){
 
 let sum = 0; 
 for ( let i = 1; i < 99; i++){
-if(i%2 != 0){
+if ( i % 2 != 0){
 continue;
 }
 sum++;
 }
-console.log("Сумма чётных чисел = " + sum);
+console.log( "Сумма чётных чисел = " + sum );
 //2 prime numbers
-let n = 10;
 
-nextPrime:
-for (let i = 2; i <= n; i++) { // Для всех i...
 
-for (let j = 2; j < i; j++) { // проверить, делится ли число..
-if (i % j == 0) continue nextPrime; // не подходит, берём следующее
+
+//4 Factorial
+function factorial(m) {
+    let m = 2;
+    i = 1;
+    do ( i *( i+1) ) 
+    while ( i < m );
+    return m
+    console.log
 }
-
-document.write( i + "," ); // простое число
-}
-
